@@ -1,4 +1,4 @@
-import { Day, PrismaClient, UserSex } from "@prisma/client";
+import { PrismaClient, Day, UserSex } from '@prisma/client';
 const prisma = new PrismaClient();
 
 async function main() {
