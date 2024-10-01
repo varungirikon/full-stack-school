@@ -20,25 +20,25 @@ const LoginPage = () => {
   }, [user, router]);
 
   return (
-    <div className="h-screen flex bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500">
-      <div className="flex-1 flex flex-col justify-center p-12 text-white">
-        <h2 className="text-sm uppercase mb-2 tracking-wider">Inspiration for Success</h2>
-        <h1 className="text-5xl font-bold mb-4 leading-tight">Achieve Your Dreams</h1>
-        <p className="text-lg max-w-md">
+    <div className="h-screen flex flex-col md:flex-row bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500">
+      <div className="flex-1 flex flex-col justify-center p-4 sm:p-8 md:p-12 text-white md:w-1/2">
+        <h2 className="text-xs sm:text-sm uppercase mb-2 tracking-wider">Inspiration for Success</h2>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 leading-tight">Achieve Your Dreams</h1>
+        <p className="text-base sm:text-lg max-w-md">
           Success is within reach. With dedication, perseverance, and the right mindset, 
           you can overcome any obstacle and turn your aspirations into reality.
         </p>
-        <div className="mt-8">
-          <a href="#" className="inline-block bg-white text-purple-600 font-semibold py-3 px-6 rounded-full hover:bg-opacity-90 transition-colors duration-300">
+        <div className="mt-6 sm:mt-8">
+          <a href="#" className="inline-block bg-white text-purple-600 font-semibold py-2 px-4 sm:py-3 sm:px-6 rounded-full hover:bg-opacity-90 transition-colors duration-300 text-sm sm:text-base">
             Learn More
           </a>
         </div>
       </div>
-      <div className="flex-1 flex items-center justify-center">
+      <div className="flex-1 flex items-center justify-center md:w-1/2">
         <SignIn.Root>
           <SignIn.Step
             name="start"
-            className="bg-white p-12 rounded-3xl shadow-2xl w-[400px]"
+            className="bg-white p-6 sm:p-8 md:p-12 rounded-3xl shadow-2xl w-full max-w-md"
           >
             <div className="flex justify-between items-center mb-8">
               <h1 className="text-3xl font-bold">Welcome Back</h1>
